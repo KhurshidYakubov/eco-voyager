@@ -1,0 +1,44 @@
+body{
+
+	font-family: effra !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.header {
+    padding: 13px 7px; 
+    background: #58b368;
+    margin-top: 10px;
+    font-family: effra_medium;
+}
+
+.header ul {
+
+		margin-top: unset;
+		margin-bottom: unset;
+		    margin: 0 51px;
+}
+.header li {
+	list-style: none;
+	font-size: 18px;
+	display: inline-block;
+	
+}
+
+.header a {
+
+	text-decoration: none;
+	color: #fff;
+	padding: 14px 15px;
+
+}
+
+.header a:hover {
+    text-decoration: none;
+    background: #a4f6a5;
+    color: #58b368;
+}
+
+.main-img img {
+
+	width: 100%;
+}
