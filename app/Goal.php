@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 
-class General extends Model
+class Goal extends Model
 {
     
 }
