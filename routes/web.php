@@ -15,7 +15,7 @@
 //     return view('home');
 // });
 
-Route::get('/', 'FeaturesController@showAll');
+Route::get('/', 'HomeController@showAll');
 
 
 Route::group(['prefix' => 'admin'], function () {

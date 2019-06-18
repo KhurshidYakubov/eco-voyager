@@ -15,5 +15,20 @@
    </div>
 
 
+
+<div class="container">
+  <div class="features">
+    <h1><span>Направления деятельности партии</span></h1>
+    @foreach($features as $item)
+    <a href="">
+    <div class="features-item hvr-bob">
+    <img src="{{Voyager::image($item->img)}}" alt="">
+    <h2>{{$item->title}}</h2>
+    </div>
+    </a>
+    @endforeach
+       </div>
+  </div>
+</div>
 </div>
 @stop
