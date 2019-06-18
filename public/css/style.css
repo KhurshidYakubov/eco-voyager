@@ -4,41 +4,278 @@ body{
 	margin: 0 !important;
 	padding: 0 !important;
 }
+
 .header {
-    padding: 13px 7px; 
-    background: #58b368;
-    margin-top: 10px;
+    background: #008249;
     font-family: effra_medium;
-}
-
-.header ul {
-
-		margin-top: unset;
-		margin-bottom: unset;
-		    margin: 0 51px;
-}
-.header li {
-	list-style: none;
-	font-size: 18px;
-	display: inline-block;
-	
 }
 
 .header a {
 
-	text-decoration: none;
 	color: #fff;
-	padding: 14px 15px;
-
+	text-transform: uppercase;
 }
 
-.header a:hover {
+.header-top {
+    background-color: #ececec;
+    padding: 5px 0 ;
+}
+.top-menu-inner ul {
+    margin: unset;
+    padding: unset;
+}
+
+.top-menu-inner li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+
+
+.top-menu-inner a {
+    border-right: 1px solid;
+    padding: 1px 10px;
+}
+
+.header-top a {
     text-decoration: none;
-    background: #a4f6a5;
-    color: #58b368;
+    color: #000;
 }
 
-.main-img img {
+.header-top .flag {
+    padding-bottom: 3px;
+}
 
-	width: 100%;
+.top-menu-inner ul li:last-child > a {
+    border: none;
+    padding-right: 0;
+}
+
+.language{
+
+	float: right;
+}
+
+.search{
+
+	float: right;
+	padding: 4px;
+}
+
+.top-menu-inner{
+	float: left;
+}
+
+.search button {
+    background: none;
+    border: none;
+}
+
+.search input[type="text"] {
+    border: 1px solid #a7a7a7;
+    padding: 0px 5px;
+    border-radius: 7px;
+}
+
+.language ul {
+    margin: unset;
+    padding: unset;
+}
+
+.language li{
+	list-style: none;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.language a {
+    border-right: 1px solid;
+    padding: 1px 7px;
+}
+
+.language ul li:last-child > a {
+    border: none;
+    padding-right: 0;
+}
+
+.main-cover {
+    height: 545px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+
+.main-cover:before {
+    content: '';
+    position: absolute;
+    background: rgba(0, 130, 73, 0.65);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.main-cover h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 44px;
+    margin-top: 40px;
+}
+
+.main-cover a {
+  color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    background: #008249;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 5px 1px rgba(28,97,52,1);
+    margin-top: 40px;
+}
+
+.main-cover a:hover{
+
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-inner {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 15%;
+}
+
+.main-inner img {
+    height: 170px;
+}
+
+.header-mid {
+    margin: 10px 0;
+}
+.logo
+{
+
+	display: inline-block;
+}
+.logo a {
+	color: #000;
+}
+
+.logo a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo img {
+	height: 100px;
+	position: relative;
+    bottom: 7px;
+}
+
+
+.logo h4 {
+	display: inline-block;
+    font-size: 24px;
+    max-width: 250px;
+    position: relative;
+    top: 10px;
+}
+
+.header-address {
+    display: inline-block;
+    max-width: 260px;
+    position: relative;
+    top: 27px;
+}
+.header-address li {
+    list-style: none;
+}
+
+.header-address i {
+    color: #008249;
+    font-size: 18px;
+     padding-right: 3px;
+    padding-bottom: 10px;
+}
+
+.header-address span {
+    font-size: 15px;
+   
+
+}
+
+.header-address ul li:last-child i {
+    color: #008249;
+    font-size: 18px;
+    float: left;
+    padding-bottom: 4px;
+    padding-right: 10px;
+}
+.add-text{
+
+	font-weight: bold;
+	padding-right: 5px;
+}
+
+.header-work-days {
+    display: inline-block;
+    max-width: 260px;
+    position: relative;
+    top: -2px;
+}
+.header-work-days li {
+    list-style: none;
+}
+
+.header-work-days i {
+    color: #008249;
+    font-size: 18px;
+     padding-right: 3px;
+    padding-bottom: 10px;
+}
+
+.header-work-days span {
+    font-size: 15px;
+   
+
+}
+
+.header-work-days ul li:last-child i {
+    color: #008249;
+    font-size: 18px;
+    float: left;
+    padding-bottom: 4px;
+    padding-right: 10px;
+}
+
+
+.virtual-reception {
+
+	display: inline-block;
+	position: relative;
+    left: 10%;
+    bottom: 10px;
+}
+
+.virtual-reception a {
+    text-decoration: none;
+    color: #008249;
+    background: #ffffff;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.virtual-reception a:hover{
+
+	color:#008249;
+	text-decoration: none;
+	
 }

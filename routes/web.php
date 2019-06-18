@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+Route::get('/', 'FeaturesController@showAll');
 
 
 Route::group(['prefix' => 'admin'], function () {
