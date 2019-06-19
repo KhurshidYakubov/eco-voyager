@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Feature;
 use App\News;
+use App\Link;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -11,6 +12,7 @@ class HomeController extends Controller
     {
         $features = Feature::all();
         $news = News::all();
-        return view('home', compact('features') , compact('news'));
+        $links = Link::all();
+        return view('home', compact('features', 'news' , 'links'));
     }
 }

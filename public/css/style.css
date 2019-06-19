@@ -281,7 +281,6 @@ body{
 }
 
 .features {
-    overflow: hidden;
     margin: 20px 0;
 }	
 
@@ -292,13 +291,13 @@ body{
     max-width: 260px;
     margin: 10px;
     padding: 18px 0;
-    box-shadow: 0px 7px 18px -5px rgba(0,0,0,1) !important;
+    box-shadow: 0px 9px 15px -11px rgba(0,0,0,1) !important;
 }
 
 .features h2 {
     font-size: 24px;
     color: #fff;
-        padding: 0 19px;
+    padding: 0 19px;
 }
 
 .features h1{
@@ -310,4 +309,112 @@ body{
 
 .features h1 span {
 	border-bottom: 2px solid #008249;
+}
+
+.news h1{
+  font-family: effra_medium;
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 25px;
+}
+
+.news h1 span {
+	border-bottom: 2px solid #008249;
+}
+
+.owl-nav{
+	display: block !important;
+}
+
+.news a{
+
+	text-decoration: none;
+}
+
+.owl-nav.disabled {
+    text-align: center;
+    margin-top: 20px;
+}
+button.owl-next {
+   box-shadow: 0px 0px 25px -10px rgba(0,0,0,1) !important;
+    background: #fff !important;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+button.owl-prev {
+    box-shadow: 0px 0px 25px -10px rgba(0,0,0,1) !important;
+    background: #fff !important;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+button.owl-next i {
+	font-size: 25px;
+}
+button.owl-prev i {
+	font-size: 25px;
+}
+
+
+
+.news-item {
+/*    box-shadow: 0px 9px 15px -11px rgba(0,0,0,1) !important;*/
+    margin: 0 15px;
+    border: 1px solid #adadad;
+}
+
+.news-content {
+    height: 150px;
+    margin-top: -10px;
+    padding: 10px 15px;
+    padding-right: 3px;
+}
+
+.news-content h5 {
+    font-size: 19px;
+    color: #008249;
+}
+
+.news-content p {
+    font-size: 17px;
+    color: #242424;
+}
+
+.links h1{
+  font-family: effra_medium;
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 25px;
+}
+
+.links h1 span {
+	border-bottom: 2px solid #008249;
+}
+
+
+.links-item img {
+    float: left;
+ padding: 3px
+}
+.links-item h2 {
+    font-size: 20px;
+    position: relative;
+  bottom: 11px;
+    left: 15px;
+}
+
+.links-inner {
+    box-shadow: 0px 0px 15px -11px rgba(0,0,0,1) !important;
+    height: 105px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.links .row {
+	margin-bottom: 200px; /*temp*/
 }
