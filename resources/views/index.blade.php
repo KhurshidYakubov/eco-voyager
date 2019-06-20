@@ -55,7 +55,9 @@
 
 				@include('header_menu')   
 
-		  		@yield('content')		
+		  		@yield('content')	
+
+		  		@include('footer')	
 
   			
   		

@@ -336,7 +336,7 @@ body{
     margin-top: 20px;
 }
 button.owl-next {
-   box-shadow: 0px 0px 25px -10px rgba(0,0,0,1) !important;
+      box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.75);
     background: #fff !important;
     border-radius: 50%;
     height: 40px;
@@ -345,7 +345,7 @@ button.owl-next {
 }
 
 button.owl-prev {
-    box-shadow: 0px 0px 25px -10px rgba(0,0,0,1) !important;
+        box-shadow: 0px 0px 8px -1px rgba(0,0,0,0.75);
     background: #fff !important;
     border-radius: 50%;
     height: 40px;
@@ -409,12 +409,111 @@ button.owl-prev i {
 }
 
 .links-inner {
-    box-shadow: 0px 0px 15px -11px rgba(0,0,0,1) !important;
+       box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
     height: 105px;
     padding: 10px;
     border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 .links .row {
-	margin-bottom: 200px; /*temp*/
+	margin-bottom: 20px; /*temp*/
 }
+
+
+
+.footer {
+    background: #008249;
+    height: 180px;
+}
+
+.footer .container{
+	padding: 0;
+	height: 100%;
+}
+
+.footer img {
+    height: 100px;
+    float: left;
+}
+
+.footer h2 
+{
+	font-size: 23px;
+	color: #fff;
+}
+
+.footer .container .col-md-4:nth-child(1) {
+    margin-top: 2%;
+        padding-left: 9px;
+}
+
+.footer .container .col-md-4:nth-child(1) h2 {
+    padding: 6px 0;
+}
+
+
+.footer  .container .col-md-4:nth-child(2) {
+    text-align: center;
+    color: #fff;
+    height: 100%;
+}
+
+.footer .col-md-4 ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 30%;
+
+}
+
+
+
+.footer .col-md-4 ul li{
+	list-style: none;
+	display: inline-block;
+ 	padding: 0 6px;
+}
+.footer .col-md-4 i {
+    font-size: 36px;
+    color: #fff;
+}
+
+.footer .col-md-4 h4 {
+    position: relative;
+    top: 56%;
+}
+
+
+.footer .col-md-4 p {
+    color: #fff;
+    font-size: 16px;
+    padding-left: 30px;
+    position: relative;
+    top: 51px;
+    margin-left: 23%;
+    margin-bottom: 0;
+}
+
+.developer {
+    text-align: center;
+    background: #008249;
+    border-top: 1px solid #9e9e9e;
+    padding:10px;
+}
+
+.developer a{
+
+	color: #fff;
+	font-family: effra_medium;
+	font-size: 16px;
+
+}
+
+.developer a:hover{
+
+	color: #fff;
+	
+}
+
+
