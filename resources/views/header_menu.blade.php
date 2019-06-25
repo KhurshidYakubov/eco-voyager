@@ -41,9 +41,9 @@
 </div>
    <div class="language">
    	<ul> 
-   		<li><a href="">Ўз</a></li>
-   		<li><a href="">Ру</a></li>
-   		<li><a href="">En</a></li>
+   		<li><a href="locale/uz">Ўз</a></li>
+   		<li><a href="locale/ru">Ру</a></li>
+   		<li><a href="locale/en">En</a></li>
    	</ul>
    </div>
 

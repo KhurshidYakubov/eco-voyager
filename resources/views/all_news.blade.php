@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="en">
 <head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Title</title>
@@ -55,7 +55,7 @@
 
 				@include('header_menu')   
 
-		  		@yield('content')	
+		  	
 
 		  		@include('footer')	
 

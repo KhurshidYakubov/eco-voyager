@@ -21,9 +21,11 @@
     <h1><span>Направления деятельности партии</span></h1>
       @foreach($features as $item)
         <a href="">
+          <div class="col-md-3">
           <div class="features-item hvr-bob">
             <img src="{{Voyager::image($item->img)}}" alt="">
             <h2>{{$item->title}}</h2>
+          </div>
           </div>
         </a>
       @endforeach
@@ -33,7 +35,10 @@
 
   <div class="container">
     <div class="news">
-       <h1><span>Новости</span></h1>
+      <div class="news-header">
+        <h1><span>@lang('home.news')</span></h1>
+        <a href="" class="all_news"><span>@lang('home.all_news')</span></a>
+      </div>
           <div class="owl-carousel">
               @foreach($news as $item) 
                 <a href="">  
@@ -41,8 +46,8 @@
                     <div>
                        <img src="{{Voyager::image($item->img)}}" alt="">
                          <div class="news-content">
-                           <h5>{{$item->title}}</h5>
-                           <p>{{$item->body}}</p>
+                          <h5>{{$item->getTranslatedAttribute('title', \App::getLocale(), 'ru')}}</h5>
+                          <p>{{$item->getTranslatedAttribute('body', \App::getLocale(), 'ru')}}</p>
                          </div>
                     </div>
                   </div>
@@ -71,6 +76,8 @@
 </div>
 </div>
   </div>
+
+  
   </div>
 
   </div>

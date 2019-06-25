@@ -18,6 +18,19 @@
 Route::get('/', 'HomeController@showAll');
 
 
+Route::get('/allnews' , function(){
+	return view('all_news');
+});
+
+
+Route::get("locale/{locale}" , function($locale){
+	Session::put('locale',$locale);
+	
+	return redirect()->back();
+});
+	
+
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
