@@ -29,6 +29,6 @@
 
 <div class="developer">
 	<a href="http://t.me/KhurshidYakubov">Связатся с разработчиком</a>
-	<h5><?=\App::getLocale();?></h5>
+	<!-- <h5><?=\App::getLocale();?></h5> -->
 </div>
 </div>

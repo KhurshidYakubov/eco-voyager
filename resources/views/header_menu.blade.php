@@ -91,7 +91,7 @@
 	</div>
 
 	<div class="virtual-reception" >
-		<a href="" class="hvr-grow-shadow">Виртуальная приёмная</a>
+		<a href="/admin/news/create" class="hvr-grow-shadow">Виртуальная приёмная</a>
 	</div>
 	</div>
 </div>

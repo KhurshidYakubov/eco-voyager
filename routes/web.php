@@ -23,6 +23,12 @@ Route::get('/allnews' , function(){
 });
 
 
+Route::get('/join' , function(){
+	return view('requestform');
+});
+
+Route::resource('rcont','RequestsController');
+
 Route::get("locale/{locale}" , function($locale){
 	Session::put('locale',$locale);
 	
