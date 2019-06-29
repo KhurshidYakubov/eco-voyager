@@ -312,11 +312,31 @@ body{
 	border-bottom: 2px solid #008249;
 }
 
-.news h1{
-  font-family: effra_medium;
-	text-align: center;
-	font-size: 36px;
-	margin-bottom: 25px;
+.news-header {
+    text-align: center;
+}
+
+.news h1 {
+    font-family: effra_medium;
+    font-size: 36px;
+    margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+    left: 40px;
+}
+
+.all_news {
+    position: relative;
+    left: 39%;
+    font-size: 14px;
+    color: #000;
+    border-bottom: 1px dotted;
+    text-decoration: none !important;
+     font-family: effra_medium;
+}
+
+.all_news:hover{
+  color: #000;
 }
 
 .news h1 span {
@@ -517,4 +537,41 @@ button.owl-prev i {
 	
 }
 
+.all-news-item img {
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.25s linear;
+}
+
+
+.all-news-item:hover img {
+      transform: scale(1.05);
+    transition: transform 0.25s linear;
+}
+.all-news a {
+    text-decoration: none;
+    color: #000;
+}
+
+.all-news a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+
+.news-text h5 {
+    font-family: effra_medium;
+  color: #008249;
+}
+
+.all-news .row {
+    margin: 50px 0;  /*temp style*/
+}
+
+.all-news-item {
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+}
+.news-text {
+    padding: 10px;
+}
 

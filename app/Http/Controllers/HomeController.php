@@ -12,12 +12,20 @@ class HomeController extends Controller
     {
         $features = Feature::all();
            $features->load('translations');
-// $features=Feature::withTranslation(\App::getLocale())->first(); 
         $news = News::all();
         	$news->load('translations');
 
         $links = Link::all();
              
         return view('home', compact('features', 'news' , 'links'));
+    }
+
+
+    public function allNews(){
+
+    	$allnews=News::all();
+    	$allnews->load('translations');
+
+    	return view('all_news' , compact('allnews'));
     }
 }

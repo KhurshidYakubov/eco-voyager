@@ -16,11 +16,12 @@
 // });
 
 Route::get('/', 'HomeController@showAll');
+Route::get('/allnews', 'HomeController@allNews');
 
 
-Route::get('/allnews' , function(){
-	return view('all_news');
-});
+// Route::get('/allnews' , function(){
+// 	return view('all_news');
+// });
 
 
 Route::get('/join' , function(){

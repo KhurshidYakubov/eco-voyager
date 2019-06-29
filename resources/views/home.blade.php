@@ -10,7 +10,7 @@
     <img src="{{Voyager::image(setting('site.logo'))}}" alt="" >
     <h2><?= setting('site.slogan');?></h2>
 
-    <a href="/join" class="hvr-pulse">Вступить в партию</a>
+    <a href="/join" class="hvr-pulse">@lang('home.join_party')</a>
     </div>
    </div>
 
@@ -37,7 +37,7 @@
     <div class="news">
       <div class="news-header">
         <h1><span>@lang('home.news')</span></h1>
-        <a href="" class="all_news">@lang('home.all_news')</a>
+        <a href="/allnews" class="all_news">@lang('home.all_news')</a>
       </div>
           <div class="owl-carousel">
               @foreach($news as $item) 
