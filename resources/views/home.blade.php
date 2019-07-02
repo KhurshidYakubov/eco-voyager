@@ -4,14 +4,19 @@
 
 <div class="content" >
    
-   <div class="main-cover" style=" background-image: url('{{Voyager::image(setting('site.main_img'))}}');">
-
+   <div class="main-cover">
+<div class="container">
    <div class="main-inner">
-    <img src="{{Voyager::image(setting('site.logo'))}}" alt="" >
-    <h2><?= setting('site.slogan');?></h2>
+    <div class="col-md-4">
+    <img src="{{Voyager::image(setting('site.hand'))}}" alt="" >
+</div>
 
+<div class="col-md-8">
+    <h2><?= setting('site.slogan');?></h2>
     <a href="/join" class="hvr-pulse">@lang('home.join_party')</a>
+  </div>
     </div>
+  </div>
    </div>
 
 
@@ -41,7 +46,7 @@
       </div>
           <div class="owl-carousel">
               @foreach($news as $item) 
-                <a href="">  
+                <a href="{{ route('hcont.show', $item->id) }}">  
                   <div class="news-item">
                     <div>
                        <img src="{{Voyager::image($item->img)}}" alt="">

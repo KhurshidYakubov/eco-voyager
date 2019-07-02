@@ -28,4 +28,10 @@ class HomeController extends Controller
 
     	return view('all_news' , compact('allnews'));
     }
+
+    public function show($id){
+        $data = News::findOrFail($id);
+            $data->load('translations');
+         return view('the-news' , compact('data'));
+    }
 }

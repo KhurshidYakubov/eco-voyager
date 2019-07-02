@@ -1,5 +1,5 @@
 
-				@include('header_links')   
+			  
 
 				@include('header_menu')   
 <div class="all-news">
@@ -8,7 +8,7 @@
           @foreach($allnews as $item) 
        
 	          	<div class="col-md-3">
-		            <a href="">  
+		            <a href="{{ route('hcont.show', $item->id) }}">  
 		              <div class="all-news-item">
 		                   <img src="{{Voyager::image($item->img)}}" alt="">
 		                     <div class="news-text">
@@ -28,16 +28,3 @@
 
   			
   		
- 		   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  		   <script src="{{asset('js/bootstrap.min.js')}}"></script>
-  		   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  		   <script src="{{asset('js/jquery.min.js')}}"></script>
-			  <script>
-			    AOS.init();
-			  </script>
-		
-
-
-
-</body>
-</html>
