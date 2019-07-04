@@ -7,4 +7,6 @@ return[
 	'all_news'=>'Барча янгиликлар',
 	'name'=>'Исм',
 	'join_party'=>'Аъзо бўлиш',
+	'international_news'=>'Халқаро янгиликлар',
+	'gallery'=>'Галерея',
 ];

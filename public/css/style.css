@@ -346,6 +346,16 @@ body{
      font-family: effra_medium;
 }
 
+.in_all_news {
+    position: relative;
+    left: 26.5%;
+    font-size: 14px;
+    color: #000;
+    border-bottom: 1px dotted;
+    text-decoration: none !important;
+    font-family: effra_medium;
+}
+
 .all_news:hover{
   color: #000;
 }
@@ -586,3 +596,58 @@ button.owl-prev i {
     padding: 10px;
 }
 
+.owl-carousel .owl-item img{
+    height: 200px;
+}
+
+
+
+.gallery-header {
+    text-align: center;
+}
+
+.gallery-header h1 {
+    font-family: effra_medium;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.gallery h1 span {
+    border-bottom: 2px solid #008249;
+}
+
+
+.partners-header {
+    text-align: center;
+}
+
+.partners-header h1 {
+    font-family: effra_medium;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+.partners h1 span {
+    border-bottom: 2px solid #008249;
+}
+
+.partner {
+    background-color: #fff;
+    height: 140px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    -webkit-box-shadow: 5px 5px 20px 4px rgba(128,128,128,0.1);
+    -moz-box-shadow: 5px 5px 20px 4px rgba(128,128,128,0.1);
+    box-shadow: 5px 5px 20px 4px rgba(128,128,128,0.1);
+}
+
+.partner img {
+    width: 100%;
+}
+
+.pagin{
+    text-align: center;
+}
+
+.pagination>.active>span{
+    background-color: #008249 !important;
+}

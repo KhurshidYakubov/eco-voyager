@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
 		<link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
-
 </head>
 <body>
 		
@@ -53,43 +52,41 @@
 <div class="header-top">
 	<div class="container">
 		<div class="top-menu-inner">
-	<ul> 	
-		<li> <a href=""><i class="fa fa-envelope" aria-hidden="true"></i> 
-			<?= setting('site.email');?>
-	    	</a>
-		</li>
+			<ul> 	
+				<li> <a href=""><i class="fa fa-envelope" aria-hidden="true"></i> 
+					<?= setting('site.email');?>
+			    	</a>
+				</li>
 
-		<li> <a href=""><i class="fa fa-volume-up" aria-hidden="true"></i> 
-			<?= setting('site.sound');?>
-	    	</a>
-		</li>
+				<li> <a href=""><i class="fa fa-volume-up" aria-hidden="true"></i> 
+					<?= setting('site.sound');?>
+			    	</a>
+				</li>
 
-		<li> <a href=""><i class="fa fa-eye" aria-hidden="true"></i> 
-			<?= setting('site.eye');?>
-	    	</a>
-		</li>
+				<li> <a href=""><i class="fa fa-eye" aria-hidden="true"></i> 
+					<?= setting('site.eye');?>
+			    	</a>
+				</li>
 
-		<li> <a href=""> 
-		<img src="{{Voyager::image(setting('site.flag_img'))}}" alt="" class="flag">
-			<?= setting('site.flag_text');?>
-	    	</a>
-		</li>
+				<li> <a href=""> 
+				<img src="{{Voyager::image(setting('site.flag_img'))}}" alt="" class="flag">
+					<?= setting('site.flag_text');?>
+			    	</a>
+				</li>
 
-		<li> <a href=""> 
-			<img src="{{Voyager::image(setting('site.gerb_img'))}}" alt="" class="flag">
-			<?= setting('site.gerb_text');?>
-	    	</a>
-		</li>
+				<li> <a href=""> 
+					<img src="{{Voyager::image(setting('site.gerb_img'))}}" alt="" class="flag">
+					<?= setting('site.gerb_text');?>
+			    	</a>
+				</li>
 
-		<li> <a href=""> 
-			<i class="fa fa-music" aria-hidden="true"></i>
-			<?= setting('site.gimn_text');?>
-	    	</a>
-		</li>
-
-	</ul>
-   
-</div>
+				<li> <a href=""> 
+					<i class="fa fa-music" aria-hidden="true"></i>
+					<?= setting('site.gimn_text');?>
+			    	</a>
+				</li>
+			</ul>   
+		</div>
    <div class="language">
    	<ul> 
    		<li><a href="locale/uz">Ўз</a></li>

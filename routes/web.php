@@ -19,9 +19,6 @@ Route::get('/', 'HomeController@showAll');
 Route::get('/allnews', 'HomeController@allNews');
 
 
-// Route::get('/allnews' , function(){
-// 	return view('all_news');
-// });
 
 
 Route::get('/join' , function(){
@@ -33,7 +30,7 @@ Route::get('/join' , function(){
 
 Route::resource('rcont','RequestsController');
 
- Route::resource('hcont','HomeController');
+Route::resource('hcont','HomeController');
 
 Route::get("locale/{locale}" , function($locale){
 	Session::put('locale',$locale);

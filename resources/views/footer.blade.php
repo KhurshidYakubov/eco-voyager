@@ -38,6 +38,8 @@
   		   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   		   <script src="{{asset('js/jquery.min.js')}}"></script>
   		   <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+  		   <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+  
   		   	  <script>
 			$('.owl-carousel').owlCarousel({
 			        loop:true,
@@ -65,5 +67,7 @@
 			  <script>
 			    AOS.init();
 			  </script>
+
+            
 </body>
 </html>

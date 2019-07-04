@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 use App\Feature;
 use App\News;
 use App\Link;
+use App\International;
+use App\Partner;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -16,15 +19,21 @@ class HomeController extends Controller
         	$news->load('translations');
 
         $links = Link::all();
+
+        $internationals = International::all();
+            $internationals->load('translations');
+
+        $partners = Partner::all();
              
-        return view('home', compact('features', 'news' , 'links'));
+        return view('home', compact('features', 'news' , 'links' , 'internationals' , 'partners'));
     }
 
 
     public function allNews(){
 
-    	$allnews=News::all();
-    	$allnews->load('translations');
+    	
+        $allnews = News::withTranslations()->paginate(2);
+    
 
     	return view('all_news' , compact('allnews'));
     }

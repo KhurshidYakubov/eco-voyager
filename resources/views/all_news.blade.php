@@ -12,8 +12,8 @@
 		              <div class="all-news-item">
 		                   <img src="{{Voyager::image($item->img)}}" alt="">
 		                     <div class="news-text">
-		                      <h5>{{$item->getTranslatedAttribute('title', \App::getLocale(), 'ru')}}</h5>
-		                      <p>{{$item->getTranslatedAttribute('body', \App::getLocale(), 'ru')}}</p>
+			                  <h5>{!!$item->getTranslatedAttribute('title', \App::getLocale(), 'ru')!!}</h5>
+	                          <p>{!!str_limit($item->getTranslatedAttribute('body', \App::getLocale(), 'ru') , 70)!!}</p>
 		                     </div>
 		              </div>
 		            </a>
@@ -21,6 +21,10 @@
 
           @endforeach
 	    </div>
+	    <div class="pagin">
+	    	{{$allnews->links()}}
+	    </div>
+	    
     </div>
 </div>
 
