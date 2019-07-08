@@ -39,6 +39,7 @@
   		   <script src="{{asset('js/jquery.min.js')}}"></script>
   		   <script src="{{asset('js/owl.carousel.min.js')}}"></script>
   		   <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+
   
   		   	  <script>
 			$('.owl-carousel').owlCarousel({
@@ -67,6 +68,8 @@
 			  <script>
 			    AOS.init();
 			  </script>
+			  	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+  		   		<script src="{{asset('js/jquery.fancybox.min.js')}}"></script>
 
             
 </body>

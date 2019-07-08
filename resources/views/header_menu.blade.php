@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}">
 		<link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}">
+		<link rel="stylesheet" href="{{asset('css/jquery.fancybox.min.css')}}">
 </head>
 <body>
 		

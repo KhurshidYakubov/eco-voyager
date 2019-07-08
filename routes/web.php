@@ -17,6 +17,7 @@
 
 Route::get('/', 'HomeController@showAll');
 Route::get('/allnews', 'HomeController@allNews');
+Route::get('/photos', 'HomeController@photos');
 
 
 

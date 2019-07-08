@@ -7,6 +7,7 @@ use App\News;
 use App\Link;
 use App\International;
 use App\Partner;
+use App\Photo;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -15,12 +16,14 @@ class HomeController extends Controller
     {
         $features = Feature::all();
            $features->load('translations');
-        $news = News::all();
+
+         $news = News::latest()->take(10)->get();
         	$news->load('translations');
+
 
         $links = Link::all();
 
-        $internationals = International::all();
+        $internationals = International::latest()->take(10)->get();
             $internationals->load('translations');
 
         $partners = Partner::all();
@@ -42,5 +45,12 @@ class HomeController extends Controller
         $data = News::findOrFail($id);
             $data->load('translations');
          return view('the-news' , compact('data'));
+    }
+
+    public function photos(){
+
+       $photos = Photo::all();
+
+       return view('photos' , compact('photos'));
     }
 }
