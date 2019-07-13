@@ -95,8 +95,20 @@
        </div>
 
        <div class="gallery-items">
-         <div class="col-md-6">Фотогалерея</div>
-         <div class="col-md-6">Видео</div>
+        <a href="/photos"> 
+         <div class="col-md-6">
+           <div class="g-item">
+          <img src="{{Voyager::image(setting('site.photos'))}}" alt=""><span>Фотогалерея</span>
+        </div>
+        </div>
+        </a>
+         <a href="/photos"> 
+         <div class="col-md-6"> 
+          <div class="g-item">
+          <img src="{{Voyager::image(setting('site.video'))}}" alt=""><span>Видеогалерея</span>
+          </div>
+        </div>
+        </a>
        </div>
     </div>
   </div>

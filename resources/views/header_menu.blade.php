@@ -55,39 +55,54 @@
 		<div class="top-menu-inner">
 			<ul> 	
 				<li> <a href=""><i class="fa fa-envelope" aria-hidden="true"></i> 
+					<span>
 					<?= setting('site.email');?>
+					</span>
 			    	</a>
 				</li>
 
 				<li> <a href=""><i class="fa fa-volume-up" aria-hidden="true"></i> 
-					<?= setting('site.sound');?>
+					<span>
+					@lang('home.sound_escort') 
+					</span>
 			    	</a>
 				</li>
 
 				<li> <a href=""><i class="fa fa-eye" aria-hidden="true"></i> 
-					<?= setting('site.eye');?>
+					<span>	
+					@lang('home.disability')
+					 </span>
 			    	</a>
 				</li>
 
 				<li> <a href=""> 
 				<img src="{{Voyager::image(setting('site.flag_img'))}}" alt="" class="flag">
-					<?= setting('site.flag_text');?>
+				<span>
+					@lang('home.flag')
+				</span>
 			    	</a>
 				</li>
 
 				<li> <a href=""> 
 					<img src="{{Voyager::image(setting('site.gerb_img'))}}" alt="" class="flag">
-					<?= setting('site.gerb_text');?>
+					<span>
+					@lang('home.emblem')
+					</span>
 			    	</a>
 				</li>
 
 				<li> <a href=""> 
 					<i class="fa fa-music" aria-hidden="true"></i>
-					<?= setting('site.gimn_text');?>
+					<span>
+					@lang('home.anthem')
+					</span>
 			    	</a>
 				</li>
 			</ul>   
 		</div>
+
+	<a href="/" class="virt-rec">@lang('home.virtual_reception')</a>		
+
    <div class="language">
    	<ul> 
    		<li><a href="locale/uz">Ўз</a></li>
@@ -98,7 +113,7 @@
 
    <div class="search">
    	<form action="#">
-	<input type="text" placeholder="Поиск...">
+	<input type="text" placeholder="@lang('home.search')">
 	<button type="submit"><i class="fa fa-search"></i></button>   		
    	</form>
    </div>
@@ -117,13 +132,13 @@
 	<div class="header-address">
 		<ul>
 			<li><i class="fa fa-phone" aria-hidden="true"></i>
-				<span class="add-text"><?= setting('site.hotline_t')?></span>
-				<span><?= setting('site.hotline_p')?></span>
+				<span class="add-text">@lang('home.phone'):</span>
+				<span><?= setting('site.phone')?></span>
 			</li>
 			<li>
 				<i class="fa fa-map-marker" aria-hidden="true"></i>
-				<span class="add-text"><?= setting('site.address_t')?></span>
-				 <span><?= setting('site.address_s')?></span>
+				<span class="add-text">@lang('home.address'):</span>
+				 <span><?= setting('site.address')?></span>
 			</li>
 		</ul>
 	</div>
@@ -131,23 +146,23 @@
 	<div class="header-work-days">
 		 <ul>
 			<li>
-				<i class="fa fa-clock-o" aria-hidden="true"></i>
-				<span class="add-text"><?= setting('site.w-time')?></span>
-				 <span><?= setting('site.w-time-t')?></span>
+				<i class="fa fa-phone" aria-hidden="true"></i>
+				<span class="add-text">@lang('home.hotline'):</span>
+				 <span><?= setting('site.hotline')?></span>
 			</li>
 		</ul>
 
 	</div>
 
 	<div class="virtual-reception" >
-		<a href="/admin/news/create" class="hvr-grow-shadow">Виртуальная приёмная</a>
+		<a href="/admin/news/create" class="hvr-grow-shadow">@lang('home.virtual_reception')</a>
 	</div>
 	</div>
 </div>
 
 <div class="header">
 	<div class="container">
-	<?=menu('main_menu' , 'bootstrap');?>		
+	<?=menu('main_menu' , 'bootstrap');?>
 	</div>
 </div>
 
