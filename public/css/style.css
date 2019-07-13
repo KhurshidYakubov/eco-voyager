@@ -347,22 +347,26 @@ text-decoration: none;}
 
 .all_news {
     position: relative;
-    left: 39%;
-    font-size: 14px;
-    color: #000;
-    border-bottom: 1px dotted;
-    text-decoration: none !important;
-     font-family: effra_medium;
-}
-
-.in_all_news {
-    position: relative;
-    left: 26.5%;
     font-size: 14px;
     color: #000;
     border-bottom: 1px dotted;
     text-decoration: none !important;
     font-family: effra_medium;
+    float: right;
+    top: 35px;
+    right: 16px;
+}
+
+.in_all_news {
+    position: relative;
+    font-size: 14px;
+    color: #000;
+    border-bottom: 1px dotted;
+    text-decoration: none !important;
+    font-family: effra_medium;
+    float: right;
+    top: 35px;
+    right: 16px;
 }
 
 .all_news:hover{
@@ -457,6 +461,7 @@ button.owl-prev i {
     position: relative;
   bottom: 11px;
     left: 15px;
+        color: #000;
 }
 
 .links-inner {
@@ -606,7 +611,7 @@ button.owl-prev i {
 }
 
 .owl-carousel .owl-item img{
-    height: 200px;
+   /* height: 200px;*/
 }
 
 
@@ -715,7 +720,32 @@ button.owl-prev i {
     font-size: 48px;
 }
 
+ .header-work-days{
+    max-width: unset;
+    top: -24px;
+ }
+ .features h2{
+    font-size: 18px;
+ }
 
+ .news-content h5{
+    font-size: 16px;
+ }
+
+ .news-content p{
+    font-size: 14px;
+ }
+
+ .news-content{
+    padding: 10px 10px;
+ }
+
+ .links-item h2{
+    font-size: 15px;
+ }
+ .footer .col-md-4 h4{
+    top: 42%;
+ }
 }
 
 @media only screen and (max-width: 992px){
@@ -786,6 +816,60 @@ button.owl-prev i {
     right: 0;
     top: 113px;
 }
+
+.features{
+    text-align: center;
+}
+
+.features .col-md-3{
+    margin-bottom: 20px;
+}
+
+.features-item{
+    max-width: unset;
+    width: 260px;
+}
+
+.features h2{
+    font-size: 22px;
+}
+
+.owl-nav {
+    text-align: center;
+    margin-top: 20px;
+}
+    .gallery-items .col-md-6 .g-item{
+        margin-bottom: 20px;
+    }
+
+    .partner img{
+        width: unset;
+    }
+
+    .footer{
+        text-align: center;
+        height: unset;
+    }
+
+    .footer .container .col-md-4:nth-child(1){
+        padding: 0;
+    }
+
+    .footer img{
+        float: unset;
+    }
+
+    .footer .col-md-4 p {
+     padding-left: unset; 
+     position: unset; 
+     top: unset; 
+     margin-left: unset; 
+     margin-bottom: unset; 
+}
+
+.developer{
+    border-top: unset;
+}
 }
 
 @media only screen and (max-width: 883px){
@@ -818,6 +902,10 @@ button.owl-prev i {
         height: 350px;
         margin-top: 45px;
     }
+    .gallery-items .col-md-6 .g-item span{
+        padding: 0;
+        padding-left: 10px;
+    }
 }
 
 @media only screen and (max-width: 390px){
@@ -830,5 +918,9 @@ button.owl-prev i {
     .main-cover h2{
             font-size: 40px;
 
+    }
+
+    .gallery-items .col-md-6 .g-item{
+        padding:10px 20px;
     }
 }
